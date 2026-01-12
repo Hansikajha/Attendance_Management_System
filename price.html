@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pricing Section</title>
+    <link href="./output.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+        .pricing-card {
+            transition: all 0.3s ease;
+        }
+
+        .pricing-card:hover {
+            background-color: #2563eb;
+        }
+
+        .pricing-card:hover h3,
+        .pricing-card:hover p,
+        .pricing-card:hover .text-4xl,
+        .pricing-card:hover span,
+        .pricing-card:hover li {
+            color: white !important;
+        }
+
+        .pricing-card:hover button {
+            background-color: white;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50 text-gray-900">
+
+    <!-- NAVBAR -->
+    <header class="bg-white shadow-sm" style="position: sticky; top: 0; z-index: 50;">
+        <div class="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
+            <div class="flex items-center gap-8">
+                <div class="text-red-500 font-bold text-sm tracking-wide">
+                    <a href="index.html">LOGO</a>
+                </div>
+
+                <nav class="hidden md:flex gap-8 text-sm text-gray-600 font-bold">
+                    <a href="index.html" class="hover:text-blue-50">Features</a>
+                    <a href="price.html" class="hover:text-blue-50">Pricing</a>
+                </nav>
+            </div>
+
+            <div class="flex items-center gap-4">
+                <button class="border border-gray-300 px-4 py-2 rounded-lg text-sm flex items-center gap-2">
+                    ▶ Watch free demo
+                </button>
+                <button class="bg-black text-white px-4 py-2 rounded-lg text-sm">
+                    Log In
+                </button>
+            </div>
+        </div>
+        <hr class="bg-gray-500" />
+    </header>
+
+    <section class="max-w-7xl mx-auto px-6 py-18">
+        <!-- Heading -->
+        <div class="text-center mb-16">
+            <h2 class="text-4xl font-bold mb-3">
+                Powerful features for powerful <br />
+                <span class="inline-block"
+                    style="background: linear-gradient(to right, #a855f7, #ec4899); -webkit-background-clip: text; background-clip: text; color: transparent;">
+                    creators
+                </span>
+            </h2>
+            <p class="text-gray-900" style="margin-top: 20px;">
+                Choose a plan that's right for you
+            </p>
+        </div>
+
+        <!-- Pricing Cards -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+            <!-- Freebie -->
+            <div class="bg-white rounded-2xl p-8 shadow-lg border min-h-[620px] cursor-pointer pricing-card"
+                style="box-shadow: 10px 10px 20px -5px rgba(0, 0, 0, 0.15);">
+                <h3 class="font-bold" style="font-size: large;">Freebie</h3>
+                <p class="text-sm text-gray-500" style="margin-top: 20px;">
+                    Ideal for individuals who need quick access to basic features.
+                </p>
+
+                <div class="text-4xl font-bold" style="margin-top: 20px;">
+                    $0 <span class="text-base font-normal text-gray-500">/ Month</span>
+                </div>
+
+                <button class="w-full border text-blue-600 py-2 rounded-lg"
+                    style="margin-top: 20px; font-weight: 700; border-color: #BBE0EF;">
+                    Get Started Now
+                </button>
+
+                <ul class="space-y-6 text-sm" style="margin-top: 20px;">
+                    <li class="flex items-center gap-2 text-gray-700">✔ 20,000+ PNG & SVG graphics</li>
+                    <li class="flex items-center gap-2 text-gray-700">✔ Access to 100 million stock images</li>
+                    <li class="flex items-center gap-2 text-gray-400">✖ Upload custom icons and fonts</li>
+                    <li class="flex items-center gap-2 text-gray-400">✖ Unlimited Sharing</li>
+                    <li class="flex items-center gap-2 text-gray-400">✖ Upload graphics & video in up to 4k</li>
+                    <li class="flex items-center gap-2 text-gray-400">✖ Unlimited Projects</li>
+                    <li class="flex items-center gap-2 text-gray-400">✖ Instant Access to our design system</li>
+                    <li class="flex items-center gap-2 text-gray-400">✖ Create teams to collaborate on designs</li>
+                </ul>
+            </div>
+
+            <!-- Professional -->
+            <div class="bg-white rounded-2xl p-8 shadow-lg border min-h-[620px] cursor-pointer pricing-card"
+                style="box-shadow: 10px 10px 20px -5px rgba(0, 0, 0, 0.15);">
+                <h3 class="font-bold" style="font-size: large;">Professional</h3>
+                <p class="text-sm text-gray-500" style="margin-top: 20px;">
+                    Ideal for individuals who need advanced features and tools.
+                </p>
+
+                <div class="text-4xl font-bold" style="margin-top: 20px;">
+                    $25 <span class="text-base font-normal text-gray-500">/ Month</span>
+                </div>
+
+                <button class="w-full border text-blue-600 py-2 rounded-lg"
+                    style="margin-top: 20px; font-weight: 700; border-color: #BBE0EF;">
+                    Get Started Now
+                </button>
+
+                <ul class="space-y-6 text-sm" style="margin-top: 20px;">
+                    <li class="flex items-center gap-2 text-gray-700">✔ 20,000+ PNG & SVG graphics</li>
+                    <li class="flex items-center gap-2 text-gray-700">✔ Access to 100 million stock images</li>
+                    <li class="flex items-center gap-2 text-gray-700">✔ Upload custom icons and fonts</li>
+                    <li class="flex items-center gap-2 text-gray-700">✔ Unlimited Sharing</li>
+                    <li class="flex items-center gap-2 text-gray-700">✔ Upload graphics & video in up to 4k</li>
+                    <li class="flex items-center gap-2 text-gray-700">✔ Unlimited Projects</li>
+                    <li class="flex items-center gap-2 text-gray-700 opacity-60">✖ Instant Access to our design system
+                    </li>
+                    <li class="flex items-center gap-2 text-gray-700 opacity-60">✖ Create teams to collaborate on
+                        designs</li>
+                </ul>
+            </div>
+
+            <!-- Enterprise -->
+            <div class="bg-white rounded-2xl p-8 shadow-lg border min-h-[620px] cursor-pointer pricing-card"
+                style="box-shadow: 10px 10px 20px -5px rgba(0, 0, 0, 0.15);">
+                <h3 class="font-bold" style="font-size: large;">Enterprise</h3>
+                <p class="text-sm text-gray-500" style="margin-top: 20px;">
+                    Ideal for businesses who need personalized services and security for lage teams.
+                </p>
+
+                <div class="text-4xl font-bold" style="margin-top: 20px;">
+                    $100 <span class="text-base font-normal text-gray-500">/ Month</span>
+                </div>
+
+                <button class="w-full border text-blue-600 py-2 rounded-lg"
+                    style="margin-top: 20px; font-weight: 700; border-color: #BBE0EF;">
+                    Get Started Now
+                </button>
+
+                <ul class="space-y-6 text-sm" style="margin-top: 20px;">
+                    <li class="flex items-center gap-2 text-gray-700">✔ 20,000+ PNG & SVG graphics</li>
+                    <li class="flex items-center gap-2 text-gray-700">✔ Access to 100 million stock images</li>
+                    <li class="flex items-center gap-2 text-gray-700">✔ Upload custom icons and fonts</li>
+                    <li class="flex items-center gap-2 text-gray-700">✔ Unlimited Sharing</li>
+                    <li class="flex items-center gap-2 text-gray-700">✔ Upload graphics & video in up to 4k</li>
+                    <li class="flex items-center gap-2 text-gray-700">✔ Unlimited Projects</li>
+                    <li class="flex items-center gap-2 text-gray-700">✔ Instant Access to our design system</li>
+                    <li class="flex items-center gap-2 text-gray-700">✔ Create teams to collaborate on designs</li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+</body>
+
+</html>
